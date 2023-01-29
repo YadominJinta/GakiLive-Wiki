@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans'],
   },
 
   presets: [
@@ -42,14 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/YadominJinta/GakiLive-Wiki/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -75,6 +68,10 @@ const config = {
             docId: 'gakilive',
             position: 'left',
             label: 'GakiLive',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right'
           },
           {
             href: 'https://github.com/YadominJinta/GakiLive-Wiki',
